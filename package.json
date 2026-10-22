@@ -1,0 +1,23 @@
+{
+  "name": "lrr-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turn a WAV/MP3 into an abstract audio-reactive video (YouTube 16:9 + Shorts/Reels 9:16) using p5.js in a headless browser and ffmpeg.",
+  "license": "GPL-3.0-or-later",
+  "main": "src/cli.js",
+  "bin": {
+    "lrr-visualizer": "src/cli.js"
+  },
+  "scripts": {
+    "render": "node src/cli.js",
+    "presets": "node src/cli.js --list"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.3.0",
+    "p5": "1.11.13",
+    "puppeteer": "^25.15.0"
+  }
+}
